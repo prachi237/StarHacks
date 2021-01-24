@@ -17,6 +17,7 @@ MindQuest, not just another app telling you what, how & when to do things. Inste
 ## Built With
 HTML/CSS/Javascript on Github/Qoom for website, Figma for Mobile App design
 <br> <img src="https://github.com/prachi237/StarHacks/blob/main/Screenshot%20(2).png" width="300" height="300" >
+<img src= "https://github.com/prachi237/StarHacks/blob/main/Screenshot%20(5).png" width="300" height="300" >
 ## Inspiration
 We were inspired to develop MindQuest due to the lack of interactive platforms and the disappointment it causes among people suffering from mental illnesses. One to one sessions costing obnoxious prices is not something everyone can afford. We built MindQuest to make adequate resources available to everyone and to raise awareness about mental health.
 
