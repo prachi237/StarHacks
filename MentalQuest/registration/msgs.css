@@ -1,4 +1,12 @@
-
+.ter{
+  float: left;
+  margin-left: 20px;
+  padding-left:20px;
+  padding-top: 30px;
+  margin-right:0;
+  height: 100px;
+  width: 100px;
+}
 main{
 
 padding: 60px;
@@ -61,3 +69,11 @@ background-position: center;
     float: left;
     color: #999;
   }
+  header{
+    border: 10px solid rgb(3, 164, 167); 
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 20%;
+
+  }
+  
