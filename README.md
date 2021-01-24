@@ -3,6 +3,10 @@ For the StarHacks Hackathon - https://starhacks.devpost.com/
 
 # Project Title: MindQuest - Helping you on your journey
 
+<p align="center">
+<img src="https://drive.google.com/file/d/1jTltD8YK5tRGRk66m1-q3HYurjUGPRGh/view?usp=sharing" width="300" height="300" >
+</p>
+
 # Description:
  <br> Technology Stack: 
  <br> HTML/CSS/Javascript on Github/Qoom for website, Figma for Mobile App design
