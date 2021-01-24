@@ -38,6 +38,7 @@ Being in different time zones was troublesome due to being 12 hours apart. We al
 
 ## Accomplishments We’re Proud Of
 Some of our ideas like the gamified approach and anonymous messaging make us stand out. We might work towards developing MindQuest as a real project.
+<br> <img src="https://github.com/prachi237/StarHacks/blob/main/Screenshot%20(10).png">
 
 ## Learning Achievements
 We learned better tactics of collaboration and brainstorming. We also learned a lot of facts about mental health that we were unaware of. We learned about the problems people with mental illnesses face and what solutions they have available.
