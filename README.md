@@ -41,7 +41,7 @@ Some of our ideas like the gamified approach and anonymous messaging make us sta
 We learned better tactics of collaboration and brainstorming. We also learned a lot of facts about mental health that we were unaware of. We learned about the problems people with mental illnesses face and what solutions they have available.
  
 ## Team
-1. AnnabelleKlosterman-USA
+<br> 1. AnnabelleKlosterman-USA
 <br> 2. Prachi Nandi- INDIA
 <br> 3. MarielKlosterman-USA
 <br> 4. ShambhaviShandilya-INDIA
