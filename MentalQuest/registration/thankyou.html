@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mental Quest">
+	<meta name="copyright" content="1/23/2021">
+	<title>Mental Quest</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<style>
+		a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<a href="../index.html"><img src="../images/mentalquestlogo.png" alt="Mental Quest Logo" width="100"></a>
+		<h2>Mental Quest</h2>
+		<h3>Helping you on your journey</h3>
+	</header>
+
+	<!-- Mobile Menu Bar -->
+	<nav id="mobile_menu">
+
+	<!-- Menu Bar -->
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html">Dashboard</a>
+				<!-- "Dashboard" Sub-Menu -->
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Messaging</a></li>
+			<li><a href="#">?</a></li>
+			<li><a href="#">Resources</a>
+				<!-- "Resources" Sub-Menu -->
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+				</ul>
+			</li>
+			<li><a href="mailto:#&subject=More information about Mental Quest">Contact Us</a></li>
+
+		</ul>
+	</nav>
+	</nav>
+	<main>
+		<section>
+			<h1>Thanks for registering!</h1>
+			<a href="../index.html">Want to go home?</a>
+		</section>
+		<aside>
+		    <nav id="sideMenu">
+				<h2>Things to Do</h2>
+				<ul>
+                <li><a href="login.html">Login or Register</a></li>
+			    <li><a href="#">Other 1</a></li>
+			    <li><a href="#">Other 2</a></li>
+			    <li><a href="#">Other 3</a></li>
+			    <li><a href="#">Other 4</a></li>
+		    	</ul>
+			</nav>
+        </aside>
+	</main>
+	<footer>
+		<p>&copy; 2021 Mental Quest</p>
+	</footer>
+</body>
+</html>

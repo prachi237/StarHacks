@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mental Quest">
+	<meta name="copyright" content="1/23/2021">
+	<title>Mental Wellness</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<style>
+		/* Fieldset Styles */
+		fieldset {
+			margin: 20px auto 20px auto;
+			padding: 20px;
+			border: 3px solid rgb(141,217,204);
+		}
+		fieldset h2 {
+			font-size: 115%;
+			color: rgb(141,217,204);
+			clear: both;
+		}
+		legend {
+			font-weight: bold;
+			font-size: 125%;
+			color: rgb(48,191,191);
+		}
+		/* Label Styles */
+		label {
+		width: 150px;
+		clear: left;				/* Clears left*/
+		display: block;				/* Locks elements together */
+		float: left;				/* Floats element to the left */
+		font-weight: bold;			/* Changes font to bold */
+		margin-bottom: 10px;		/* Sets bottom margin */
+		}
+		.options {
+			width: 300px;
+		}
+		/* Input Styles */
+		input {
+			display: block;
+			float: left;
+			margin-bottom: 10px;
+			width: 200px;
+		}
+		input[type=submit], input[type=reset] {
+			width: 150px;
+			float: left;
+			margin: 10px 20px 10px 0;
+			background-color: rgb(48,191,191);
+			color: white;
+		}
+		select {
+			width: 200px;
+			display: block;
+			margin-bottom: 10px;
+			float: left;
+		}
+		input[type=radio], input[type=checkbox] {
+			width: 20px;
+		}
+		input:focus {
+			border: 5px solid rgb(141,217,204);
+		}
+		#contact input:required, #contact input:invalid {
+			background-color: rgba(255,0,0,.1);
+		}
+		#contact input:valid {
+			background-color: rgba(0,255,0,.1);
+		}
+		textarea {
+			height: 10em;
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<a href="index.html"><img src="../images/mentalquestlogo.png" alt="Mental Quest" width="100"></a>
+		<h2>Mental Quest</h2>
+		<h3>Helping you on your journey</h3>
+	</header>
+
+	<!-- Mobile Menu Bar -->
+	<nav id="mobile_menu">
+
+	<!-- Menu Bar -->
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html" class="current">Dashboard</a>
+				<!-- "Dashboard" Sub-Menu -->
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Messaging</a></li>
+			<li><a href="#">?</a></li>
+			<li><a href="#">Resources</a>
+				<!-- "Resources" Sub-Menu -->
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+				</ul>
+			</li>
+			<li><a href="mailto:#&subject=More information about Mental Quest">Contact Us</a></li>
+
+		</ul>
+	</nav>
+	</nav>
+	<main>
+		<section>
+			<form name="contact_form" action="thankyou.html" method="get">
+				<!-- Login Information -->
+				<fieldset id="contact">
+					<legend>Login</legend>
+					<label for="fname">*Name:</label>
+					  <input type="text" id="fname" name="fname" autofocus required><br>
+					<label for="email">*Email Address:</label>
+					  <input type="email" id="email" name="email" required><br>
+					<!-- NEED TO ADD PASSWORD FIELD -->
+				</fieldset>
+
+					<!-- Registration Information -->
+					<fieldset id="contact">
+						<legend>Registration Information</legend>
+						<label for="fname">*Name:</label>
+						<input type="text" id="fname" name="fname" autofocus required><br>
+						<label for="email">*Email Address:</label>
+						<input type="email" id="email" name="email" required><br>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone"
+							   pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+							   title="Must be 555-555-5555"
+							   placeholder="555-555-5555"><br>
+						<h2>How would you like to be contacted? Select all that apply:</h2>
+						<label for="email_list" class="options">Email</label>
+						<input type="checkbox" id="email_list" name="email_list" value="email_list" checked><br>
+						<label for="textmessage" class="options">Text Message</label>
+						<input type="checkbox" id="textmessage" name="textmessage" value="textmessage"><br>
+					</fieldset>
+				<!-- Comment Field -->
+				<fieldset id="comments">
+					<legend>Comments</legend>
+					<textarea id="commenting" placeholder="Enter any comments you may have."> </textarea><br><br>
+				</fieldset>
+				<input type="submit" name="submit" value="Submit Form">
+				<input type="reset" name="reset" value="Reset Form">
+			</form>
+		</section>
+		<aside>
+			<!-- Side Menu -->
+			<nav id="sideMenu">
+				<h2>Things to Do</h2>
+				<ul>
+					<li><a href="login.html">Login or Register</a></li>
+					<li><a href="#">Other 1</a></li>
+					<li><a href="#">Other 2</a></li>
+					<li><a href="#">Other 3</a></li>
+					<li><a href="#">Other 4</a></li>
+				</ul>
+			</nav>
+        </aside>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2021 Mental Quest</p>
+	</footer>
+</body>
+</html>

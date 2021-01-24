@@ -1,0 +1,237 @@
+html {
+    background-color: rgb(141,217,204);
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetic, sans-serif;
+    max-width: 1094px;                          /* Max width that the content can take up in the browser window */
+    width: 95%;                                 /* Takes up 95% of the browser window */
+    border: 5px solid rgb(120,203,202);
+    margin: 10px auto;
+/*    box-shadow: -5px -5px rgb(100,189,201), 5px 5px rgb(100,189,201);*/
+    background-color: white;
+    }
+    /* Header */
+    header {
+        border-bottom: 5px solid rgb(100,189,201);
+        padding: 0 25px 0 25px;
+        background-color: white;
+    }
+    header img {
+        width: 15%;                         /* Sets the responsive scaling */
+        max-width: 100px;                   /* Sets the max "scale" to 100px */
+        min-width: 85px;                    /* Sets the min "scale" to 85px */
+        float: left;
+    }
+    /* Header Heading 2 */
+        header h2 {
+            font-size: 250%;
+            text-indent: 3%;
+            font-style: italic;
+            color: rgb(120,203,202);
+            text-shadow: 3px 3px 3px rgb(17,132,194);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    /* Header Heading 3 */
+        header h3 {
+            font-size: 150%;
+            text-indent: 3%;
+            color: rgb(120,203,202);
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+    /* Mobile Menu */
+    #mobile_menu .slicknav_menu {display: none;}
+    /* Nav */
+    #nav_menu {
+        margin-bottom: 2em;
+        border-top: 5px solid rgb(120,203,202);
+        border-bottom: 5px solid rgb(120,203,202);
+        /* box-shadow: 0 1px 5px black; */
+    }
+    /* The styles for the operation of the 2-tier navigation menu */
+    #nav_menu ul {
+        list-style: none;
+        position: relative;    /* So the first submenu can be positioned within the main menu */
+    }
+    #nav_menu ul li {
+        width: 20%;
+        float: left;
+    }
+    #nav_menu ul ul {
+        display: none;         /* Don't display submenu until hover of the li element */
+        position: absolute;
+        top: 100%;             /* Position the submenu at the bottom of the main menu */
+        width: 100%;           /* Sets the width of the submenu */
+        font-size: 95%;
+    }
+    #nav_menu ul ul li {
+        float: none;           /* Display the submenus vertically */
+    }
+    #nav_menu ul li:hover > ul {
+        display: block;        /* Display the submenu on hover of the li element */
+    }
+    #nav_menu > ul::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* The styles for the formatting of the 2-tier navigation menu */
+    #nav_menu ul {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+    #nav_menu ul li a {
+        text-align: center;
+        display: block;
+        width: 100%;                /* Changes the width of the navbar */
+        padding: .5em 0;
+        text-decoration: none;
+        background-color: rgb(141,217,204);
+        color: white;
+        font-weight: bold;
+        font-size: 110%;
+    }
+    #nav_menu ul li.lastitem a {
+        width: 175px;               /* So the menu fills the 706px width of the page */
+    }
+    #nav_menu ul li a.current {
+        color: rgb(17, 132, 194);
+    }
+    #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+        background-color: rgb(79, 175, 199);
+    }
+    /* Nav 2 */
+    /* the styles for the vertical navigation menu */
+    #sideMenu ul {
+        list-style: none;
+        margin-left: -10%;
+        margin-bottom: 1.5em;
+    }
+    #sideMenu ul li {
+        margin-bottom: .5em;
+        border: 3px solid rgb(120,203,202);
+    }
+    #sideMenu ul li a {
+        display: block;
+        font-weight: bold;
+        color: rgb(120,203,202);
+        text-decoration: none;
+        padding: .5em 1em .5em 1.5em;
+    }
+    #sideMenu ul li a.current {
+        background-color: silver;
+    }
+    #sideMenu ul li a:hover, #sideMenu ul li a:focus {
+        color: white;
+        background-color: rgb(120,203,202);
+    }
+
+    /* Main */
+    main {
+        padding: 0 25px 0 25px;
+    }
+    main h1 {
+        font-size: 160%;
+    }
+    main h2 {
+        font-size: 130%;
+    }
+    main h3 {
+        font-size: 110%;
+    }
+        /* Section */
+        main section {
+            width: 67%;
+            margin-left: 2.0202%;
+            padding: 1.5em 2.52525% 0 0;
+            float: left;
+        }
+        main section a:link {
+            font-weight: bold;
+            color: rgb(120,203,202);
+        }
+        main section a:hover, a:focus {
+            font-weight: bold;
+            color: rgb(58,160,197);
+        }
+        /* Aside */
+        main aside {
+            width: 27%;
+            float: left;
+            margin-top: 7px;
+            padding: 0;
+        }
+        main aside a:link {
+            font-weight: bold;
+            color: rgb(120,203,202);
+        }
+        main aside a:hover, a:focus {
+            font-weight: bold;
+            color: rgb(100,189,201);
+        }
+        main aside ul {
+            line-height: 1.5;
+        }
+    /* Footer */
+    footer {
+        clear: both;
+        background-color: rgb(100,189,201);
+        padding: 5px;
+        color: white;
+    }
+    footer p {
+        font-size: smaller;
+        text-align: center;
+    }
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 793px) {
+    #nav_menu {display: none;}
+    #mobile_menu .slicknav_menu {display: block;}
+    header h2 {
+        font-size: 225%;
+    }
+    header h3 {
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: linear-gradient(rgb(120,203,202),rgb(120,203,202));
+        padding: 15px 25px 0 25px;
+    }
+    header image {
+        width: 200px;
+    }
+    main section {
+        width: 100%;
+    }
+    main aside {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 529px) {
+    header image {
+        width: 80px;
+    }
+    header h2 {
+        font-size: 150%;
+    }
+    header h3 {
+        font-size: 140%;
+    }
+    body {
+        font-size: 70%;
+    }
+}
